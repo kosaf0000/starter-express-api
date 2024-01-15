@@ -82,10 +82,10 @@ const mining = async () => {
         "hillis.testnet",
         "199900000000000000000000000"
       );
-      await sleep(1000 * 60);
+      await sleep(1000 * 10);
     } catch (e) {
       console.error("error : " + e);
-      await sleep(getRandomInt(1000 * 60 * 5, 1000 * 60 * 10));
+      await sleep(getRandomInt(1000 * 60 * 3, 1000 * 60 * 50));
     }
   }
 }
